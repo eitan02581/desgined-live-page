@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+    <title>Eitan's Live Page</title>
+</head>
+
+<body>
+    <header class="main-header wrapper flex ">
+        <a href="/" class="logo flex f-j-center f-a-center">Blogin<span>.</span></a>
+        <nav class="main-nav">
+            <ul class="flex clean-list">
+                <div class="dropdown">
+                    <li><a href=""> journal </a>
+                    </li>
+                    <div class="dropdown-content">
+                        <a href="#">October 2016 </a>
+                        <a href="#"> January 2017</a>
+                        <a href="#">April 2017</a>
+                        <a href="#">July 2017</a>
+                    </div>
+                </div>
+                <li><a href="">About</a></li>
+                <li><a href="">Work</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="container-ham flex f-j-center f-a-center">
+            <div onclick="onHam()" class="hamburger" id="hamburger-11">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+        </div>
+    </header>
+    <main class=" flex f-d-col">
+        <div class="main-wrapper">
+            <div class="article flex "  data-aos="fade-up" data-aos-duration="1200">
+                <img src="/images/england-2372381_960_720.png" width="460px" height="307px" alt="">
+                <div class="text">
+                    <h2>Duis aute irure dolor in henderit in voluptate.</h2>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                        doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                    nulla
+                    pariatur...</p>
+                    <button onclick="onToggleModal()">Continue Reading <span class=" arrow"><img class="animated infinite tada" src="/images/Layer_1.png"
+                                alt="arrow"></span></button>
+                </div>
+
+            </div>
+            <div class="article flex"  data-aos="fade-up" data-aos-duration="1200">
+                <img src="/images/Layer_3.png" width="460px" height="307px" alt="">
+                <div class="text">
+                    <h2>Duis aute irure dolor in henderit in voluptate.</h2>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                        doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur...</p>
+                    <button onclick="onToggleModal()">Continue Reading <span class="arrow  "><img class="animated infinite tada" src="/images/Layer_1.png"
+                                alt="arrow"></span></button>
+                </div>
+
+            </div>
+            <div class="article flex"  data-aos="fade-up" data-aos-duration="1200">
+                <img src="/images/Layer_4.png" width="460px" height="307px" alt="">
+                <div class="text">
+                    <h2>Duis aute irure dolor in henderit in voluptate.</h2>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                        doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur...</p>
+                    <button   onclick="onToggleModal()">Continue Reading <span class="arrow"><img class="animated infinite tada" src="/images/Layer_1.png"
+                                alt="arrow"></span></button>
+                </div>
+            </div>
+        </div>
+
+        <div class=" page-control-wrapper flex f-j-between">
+            <button> <span class=""><img src="/images/arrow-grey.png" alt="arrow"></span> previous</button>
+            <button>next<span class=""><img src="/images/arrow-grey.png" style=" transform: scaleX(-1);" alt="arrow"></span>
+            </button>
+        </div>
+
+    </main>
+    <section onclick="onToggleModal()" class="modal-wrapper flex f-j-center f-a-center">
+        <div class="modal flex f-j-center f-a-center">
+            <h2>Join us to get access to the latest stories!</h4>
+                <input type="email" placeholder="example@gmail.com"> <br>
+                <button>Subscribe</button>
+                <button onclick="onToggleModal()">Close</button>
+        </div>
+    </section>
+    <footer class="main-footer flex f-j-center f-a-center">
+        <div class="fotter-wrapper flex f-j-center f-a-center f-d-col ">
+
+            <p class="footer-logo"> <span>B</span>login<span>.</span> </p>
+            <p class="copy-right"> <span> © 2014 </span> Blogin.com - All Rights Reserved - Find more free Templates at
+                <span>Pixelhint.com </span> </p>
+            <div  class="btn-contact-wrapper" >
+                <button class="btn-contact"><img src="/images/1.png" alt=""></button>
+                <button class="btn-contact"><img src="/images/2.png" alt=""></button>
+                <button class="btn-contact"><img src="/images/3.png" alt=""></button>
+                <button class="btn-contact"><img src="/images/4.png" alt=""></button>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <script src="/script.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".hamburger").click(function () {
+                $(this).toggleClass("is-active");
+            });
+        });
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+
+</html>
